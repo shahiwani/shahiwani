@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>FAMILY</title>
+<link rel="icon" type="image/x-icon" href="logo412.jpg">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="footer.css">
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Times new roman';
+    background: linear-gradient(to right, #feb47b, pink);
+    color: #333;
+    line-height: 1.6;
+  }
+
+  .topnav {
+    background-color: #86945e;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .topnav a {
+    display: inline-block;
+    color: pink;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 1.0em;
+    font-weight: bold;
+  }
+
+  .topnav a:hover {
+    background-color: #c3d4a5;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .topnav a.active {
+    background-color: #78866b;
+    color: #ffffff;
+    border-radius: 5px;
+  }
+
+ /* Header */
+    .header {
+      position: relative;
+      background-image: url('family1.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+.header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+}
+ .header h1, .header p {
+      position: relative;
+      z-index: 1;
+    }
+
+    .header h1 {
+      font-size: 5em;
+      margin-bottom: 10px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+
+    .header p {
+      font-size: 1.2rem;
+    }
+
+   @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+}
+
+  /* Cards */
+  .card {
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+    max-width: 1300px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .card.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Striped Rows */
+tbody tr:nth-child(even) {
+    background-color: pink;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #937a62;
+}
+
+/* Hover Effect */
+tbody tr:hover {
+    background-color: #c3d4a5; /* Light green background on hover */
+    transform: scale(1.02); /* Slight scale effect */
+}
+
+td img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+td img:hover {
+    transform: scale(1.2); /* Zoom effect on hover */
+}
+
+/* Hover tooltip for more details */
+td:hover::after {
+   
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    transform: translateY(-20px);
+    opacity: 0.8;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+th {
+    background-color: #86945e;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Animation for row appearance */
+tbody tr {
+    animation: fadeInDown 0.5s ease-out;
+}
+
+/* Add fadeInDown animation */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+</style>
+</head>
+
+<body>
+  <div class="topnav">
+    <a href="index.html">HOMEPAGE</a>
+    <a href="biodata.html">BIODATA</a>
+    <a href="education.html">EDUCATION</a>
+    <a href="experience.html">EXPERIENCE</a>
+    <a href="gallery.html">GALLERY</a>
+    <a href="family.html" class="active">FAMILY</a>
+  </div>
+
+  <div class="header" id="home">
+    <h2>Hello!</h2>
+    <h1>I'm <sub style="color: #c3d4a5";>Wani</h1>
+    <p>Let's know more about me!!</p>
+  </div>
+
+  <div class="card" id="family">
+    <h2>About Us</h2>
+    <p>Welcome to my family page! Here, you can know about my wonderful family members.</p>
+
+    <h2>Family Members</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Photo</th>
+          <th>Name</th>
+          <th>Relationship</th>
+          <th>Age</th>
+          <th>Hobbies</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Family members rows -->
+        <tr>
+          <td><img src="father.jpg" alt="Father"></td>
+          <td>BASERI</td>
+          <td>Father</td>
+          <td>50</td>
+          <td>Gardening, Reading</td>
+        </tr>
+         <tr>
+          <td><img src="mother.jpg" alt="Mother"></td>
+          <td>HAFAZAH</td>
+          <td>Mother</td>
+          <td>46</td>
+          <td>Cooking and Backing</td>
+        </tr>
+	<tr>
+          <td><img src="sister 1.jpg" alt="Sister 1"></td>
+          <td>SHAHIRA</td>
+          <td>Sister</td>
+          <td>26</td>
+          <td>Hiking</td>
+        </tr>
+        <tr>
+          <td><img src="sister 2.jpg" alt="Sister 2"></td>
+          <td>SHAHRINA</td>
+          <td>Sister</td>
+          <td>25</td>
+          <td>Drawing</td>
+        </tr>
+ 	<tr>
+          <td><img src="sister 3.jpg" alt="Sister 3"></td>
+          <td>SHAHNAZATUL</td>
+          <td>Sister</td>
+          <td>23</td>
+          <td>Cooking</td>
+        </tr>
+	 <tr>
+          <td><img src="sister 4.jpg" alt="Sister 4"></td>
+          <td>SHAHIWANI</td>
+          <td>Sister</td>
+          <td>20</td>
+          <td>Listening to music and cooking</td>
+        </tr>
+        <tr>
+          <td><img src="brother 1.jpg" alt="Brother 1"></td>
+          <td>AIMAN</td>
+          <td>Brother</td>
+          <td>15</td>
+          <td>Gaming</td>
+        </tr>
+	<tr>
+          <td><img src="brother 2.jpg" alt="Brother 2"></td>
+          <td>AMMAR</td>
+          <td>Brother</td>
+          <td>13</td>
+          <td>Gaming</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+ <div class="footer">
+  <div class="footer-left">
+    <p>Contact Me:</p>
+    <a href="mailto:nshahiwani@gmail.com">📧 Email</a> |
+    <a href="http://www.wasap.my/601128851107" target="_blank">📱 WhatsApp</a> |
+    <a href="tel:601128851107">☎️ Call</a>
+  </div>
+  <div class="footer-center">
+    <p>© 2024 My Dear Diary. All rights reserved.</p>
+  </div>
+  <div class="footer-right">
+    <p>Follow Me:</p>
+    <a href="https://www.facebook.com/your-profile" target="_blank">
+      <img src="facebook-icon.jpg" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/your-profile" target="_blank">
+      <img src="instagram-icon.jpg" alt="Instagram">
+    </a>
+    <a href="https://twitter.com/your-profile" target="_blank">
+      <img src="tiktok-icon.jpg" alt="Twitter">
+    </a>
+  </div>
+</div>
+
+
+  <script>
+    const cards = document.querySelectorAll('.card');
+
+    function revealCards() {
+      const triggerBottom = window.innerHeight * 0.8;
+
+      cards.forEach(card => {
+        const cardTop = card.getBoundingClientRect().top;
+
+        if (cardTop < triggerBottom) {
+          card.classList.add('visible');
+        } else {
+          card.classList.remove('visible');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', revealCards);
+    revealCards(); // Initial check
+  </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+.footer {
+  background-color: #576b33;
+  color: pink;
+  padding: 2px; 
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Distribute left, center, right sections */
+  align-items: center; /* Align items vertically */
+  text-align: center; /* Default text alignment for all sections */
+}
+
+.footer-left,
+.footer-right {
+  width: 50%; /* Left and Right sections get equal space */
+  text-align: left; /* Align text/icons in the left section */
+}
+
+.footer-right {
+  text-align: right; /* Align text/icons in the right section */
+}
+
+.footer-center {
+  width: 40%; /* Center section for copyright */
+}
+
+.footer a {
+  color: pink;
+  text-decoration: none;
+  margin: 0 2px;
+  padding: 0; /* Ensure no padding around links */
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.footer img {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px; /* Adjusted margin to 5px */
+  transition: transform 0.3s ease;
+}
+
+.footer img:hover {
+  transform: scale(1.1);
+}

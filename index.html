@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Dear Diary</title>
+  <link rel="icon" type="image/x-icon" href="logo.jpg">
+  <link rel="stylesheet" href="footer.css">
+    <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: times new roman;
+      background: linear-gradient(to right, #feb47b, pink);
+      color: #333;
+     
+    }
+
+    .header {
+      background-image: url('hello.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #610000;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .header h1 {
+      font-size: 5em;
+    }
+
+    .clock-date {
+      color:pink;
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    .topnav {
+      position: sticky;
+      top: 0;
+      background-color: #86945e;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+
+    .topnav a {
+      color: pink;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: bold; 
+      transition: all 0.3s;
+    }
+
+    .topnav a:hover {
+      background-color: #78866b;
+      color: #fofffo;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 17px;
+      margin: 20px;
+    }
+
+    .column {
+      flex: 1 1 calc(33.33% - 30px);
+      max-width: calc(33.33% - 30px);
+    }
+
+    .card {
+      background-color: #f9f9f9;
+      border: 5px solid pink;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      margin: 10px 0;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: red;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .column {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <marquee><h1> My Dear Diary</h1></marquee>
+    <p>Let's know me more!!</p>
+    <div class="clock-date">
+      <span id="date"></span> | <span id="clock"></span>
+    </div>
+  </div>
+
+  <div class="topnav">
+    <a href="index.html">Homepage</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="education.html">Education</a>
+    <a href="experience.html">Experience</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="family.html">Family</a>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <h2>Biodata</h2>
+        <p>My name is Noor Shahiwani Qurratuain Binti Baseri.</p>
+        <a href="biodata.html" style="text-decoration: none;">
+          <button>Read More</button>
+        </a>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <h2>Education</h2>
+        <p>I am a Diploma in Information Management student at UiTM Segamat, Johor.</p>
+        <a href="education.html" style="text-decoration: none;">
+          <button>Read More</button>
+        </a>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <h2>Experience</h2>
+        <p>I have completed my practical training at the Jasin District Education Office.</p>
+        <a href="experience.html" style="text-decoration: none;">
+          <button>Read More</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <h2 style="text-align:center;">Gallery</h2>
+    <div class="row">
+      <div class="column">
+        <img src="childhood friends.jpg" alt="me with my childhood friends">
+      </div>
+      <div class="column">
+        <img src="me.jpg" alt="myself">
+      </div>
+      <div class="column">
+        <img src="student practical.jpg " alt="Me and my internship friends.">
+      </div>
+    </div>
+  </div>
+
+<div class="footer">
+  <div class="footer-left">
+    <p>Contact Me:</p>
+    <a href="mailto:nshahiwani@gmail.com">📧 Email</a> |
+    <a href="http://www.wasap.my/601128851107" target="_blank">📱 WhatsApp</a> |
+    <a href="tel:601128851107">☎️ Call</a>
+  </div>
+  <div class="footer-center">
+    <p>© 2024 My Dear Diary. All rights reserved.</p>
+  </div>
+  <div class="footer-right">
+    <p>Follow Me:</p>
+    <a href="https://www.facebook.com/your-profile" target="_blank">
+      <img src="facebook-icon.jpg" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/your-profile" target="_blank">
+      <img src="instagram-icon.jpg" alt="Instagram">
+    </a>
+    <a href="https://twitter.com/your-profile" target="_blank">
+      <img src="tiktok-icon.jpg" alt="Twitter">
+    </a>
+  </div>
+</div>
+
+  <script>
+    function updateClockAndDate() {
+      const now = new Date();
+      const date = now.toLocaleDateString();
+      const time = now.toLocaleTimeString();
+      document.getElementById('date').textContent = date;
+      document.getElementById('clock').textContent = time;
+    }
+
+    setInterval(updateClockAndDate, 1000); // Update every second
+    updateClockAndDate(); // Initial call to display immediately
+  </script>
+</body>
+</html>
+

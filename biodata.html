@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BIODATA</title>
+  <link rel="icon" type="image/x-icon" href="logo.jpg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="footer.css">
+   <style>
+    /* General Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: times new roman;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    .header {
+      position: relative;
+      background-image: url('carti.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+.header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+}
+ .header h1, .header p {
+      position: relative;
+      z-index: 1;
+    }
+
+    .header h1 {
+      font-size: 5em;
+      margin-bottom: 10px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+    }
+   @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .header h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+   .topnav {
+    background-color: #86945e;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .topnav a {
+    display: inline-block;
+    color: pink;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 1.0em;
+    font-weight: bold;
+  }
+
+  .topnav a:hover {
+    background-color:  #c3d4a5;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .topnav a.active {
+    background-color: #78866b;
+    color: #fofffo;
+    border-radius: 5px;
+  }
+
+    /* Layout */
+    .row {
+      display: flex;
+      margin: 20px;
+      gap: 20px;
+    }
+
+    .leftcolumn {
+      flex: 3;
+    }
+
+    .rightcolumn {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 6px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+      margin-bottom: 30px; 
+	
+    }
+
+    .card ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .card ul li {
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+
+    .fakeimg {
+      width: 100%;
+      padding: 50px;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+  
+    /* Responsive Layout */
+    @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .topnav {
+        display: flex;
+        flex-wrap: wrap; /* Wrap items on smaller screens */
+      }
+ .topnav a {
+        width: 100%; /* Full-width links */
+        text-align: center;
+        padding: 10px;
+
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="topnav">
+    <a href="index.html">HOMEPAGE</a>
+    <a href="biodata.html" class="active">BIODATA</a>
+    <a href="education.html">EDUCATION</a>
+    <a href="experience.html">EXPERIENCE</a>
+    <a href="gallery.html">GALLERY</a>
+    <a href="family.html">FAMILY</a>
+  </div>
+
+
+  <div class="header"  >
+    <h2>Hello!</h2>
+    <h1>I'm <sub style="color: #deaa88;">Wani</sub></h1>
+    <p>Let's know more about me!!</p>
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2 style="color:#ff9999">WELCOME</h2>
+               <center><img src="wani.jpg" alt="myself" style="width:20%; border-radius:10px;"></center>
+        <center><p>Hello!! This is me <b>Wani<3</b></p></center> <br>
+        <p>Welcome, everyone! Thank you for visiting my personal website. <br>This space is dedicated to sharing a little about myself—my journey, my interests, and the things that inspire me. I hope you enjoy learning more as you explore the pages I've created. Your support means so much to me, and I’m excited to have you here. Feel free to look around and get to know me better. Thank you for stopping by! 😊</p>
+      </div>
+
+     <div class="card">
+  <h2 style="color:#ff9999">MY HOBBY</h2>
+  <p>My love language is cooking. This is dishes I've cooked:</p><br>
+
+    <img src="Soy Sauce Chicken.jpg" alt="Soy Sauce Chicken" width="200" usemap="#chickenMap" style="border-radius:10px; margin: 10px;">
+  <map name="chickenMap">
+    <area shape="rect" coords="10,10,200,200" href="Soy Sauce Chicken_recipe.html" alt="Soy Sauce Chicken Recipe">
+  </map>
+
+  <img src="Spicy Coconut Chicken.jpg" alt="Spicy Coconut Chicken " width="200" usemap="#spicyMap" style="border-radius:10px; margin: 10px;">
+  <map name="spicyMap">
+    <area shape="rect" coords="10,10,200,200" href="Spicy Coconut Chicken_recipe.html" alt="Spicy Coconut Chicken Recipe">
+  </map>
+
+
+  <img src="Spicy Sambal Prawns.jpg" alt="Spicy Sambal Prawns" width="200" usemap="#prawnsMap" style="border-radius:10px; margin: 10px;">
+  <map name="prawnsMap">
+    <area shape="rect" coords="10,10,200,200" href="Spicy Sambal Prawns_recipe.html" alt="Spicy Sambal Prawns Recipe">
+  </map>
+
+
+  <img src="Black Beef Stew.jpg" alt="Black Beef Stew " width="200" usemap="#beefMap" style="border-radius:10px; margin: 10px;">
+  <map name="beefMap">
+    <area shape="rect" coords="10,10,200,200" href="Black Beef Stew_recipe.html" alt="Black Beef Stew  Recipe">
+  </map>
+
+  <br><center><p>For the recipe, simply click on the image. Thank you! 😊</p></center><br>
+</div>
+</div>
+
+    <div class="rightcolumn">
+      <div class="card">
+        <h3 style="color:#ff9999">My current favourite song:</h3><br>
+	<h3 style="color:#607d3b">Tyla, Push 2 Start</b></h3>
+        <audio controls>
+          	<source src="tyla.ogg" type="audio/ogg">
+          	<source src="tyla.mp3" type="audio/mpeg">
+          	Your browser does not support the audio element.
+        </audio><br></br>
+
+<h3 style="color:#607d3b">Frank Ocean, American Ocean</b></h3>
+ <audio controls>
+          	<source src="frank ocean.ogg" type="audio/ogg">
+          	<source src="frank ocean.mp3" type="audio/mpeg">
+          	Your browser does not support the audio element.
+        </audio><br></br>
+
+      </div>
+
+      <div class="card">
+        <center><h3 style="color:#ff9999">ABOUT ME</h3></center>
+        <ul>
+          <li><strong>Name:</strong> Noor Shahiwani Qurratuain Binti Baseri</li>
+	 <li><strong>Nickname:</strong></li>
+	  <ol>
+              <li>Wani</li>
+              <li>Ain</li>
+	</ol>
+          <li><strong>Date of Birth:</strong> 13 July 2004</li>
+          <li><strong>Address:</strong> Jc 3945 Jalan Jasin Perdana 9, Taman Jasin Perdana, 77200 Bemban, Melaka</li>
+          <li><strong>Email:</strong>
+            <ol>
+              <li>nshahiwani@gmail.com</li>
+              <li>2022893866@student.uitm.edu.my</li>
+            </ol>
+          </li>
+          <li><strong>Phone:</strong> +60 11 2885 1107</li>
+        </ul>
+      </div>
+
+      <div class="card">
+       <center> <h2 style="color:#ff9999">Follow Me</h2></center>
+        <p><b>Click here for more updates!!:</b></p><br>
+        <a href="https://www.instagram.com/4477d3?igsh=eTV2MnF3bWV6bWx4&utm_source=qr" target="_blank"><img src="instagram-icon.jpg" style="width:60px;"></a><br>
+        <a href="https://www.tiktok.com/en/" target="_blank"><img src="tiktok-icon.jpg" style="width:60px;"></a><br>
+        <a href="https://www.facebook.com/share/KkQWsFKR6T4PPuhV/?mibextid=LQQJ4d" target="_blank"><img src="facebook-icon.jpg" style="width:60px;"></a><br>
+      </div>
+    </div>
+  </div>
+  
+
+<div class="footer">
+  <div class="footer-left">
+    <p>Contact Me:</p>
+    <a href="mailto:nshahiwani@gmail.com">📧 Email</a> |
+    <a href="http://www.wasap.my/601128851107" target="_blank">📱 WhatsApp</a> |
+    <a href="tel:601128851107">☎️ Call</a>
+  </div>
+  <div class="footer-center">
+    <p>© 2024 My Dear Diary. All rights reserved.</p>
+  </div>
+  <div class="footer-right">
+    <p>Follow Me:</p>
+    <a href="https://www.facebook.com/your-profile" target="_blank">
+      <img src="facebook-icon.jpg" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/your-profile" target="_blank">
+      <img src="instagram-icon.jpg" alt="Instagram">
+    </a>
+    <a href="https://twitter.com/your-profile" target="_blank">
+      <img src="tiktok-icon.jpg" alt="Twitter">
+    </a>
+  </div>
+</div>
+</body>
+</html>

@@ -7,50 +7,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="footer.css">
 <style>
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  /* General Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  body {
-    font-family: 'Times new roman';
-    background: linear-gradient(to right, #feb47b, pink);
-    color: #333;
-    line-height: 1.6;
-  }
+    body {
+      font-family: times new roman;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      color: #333;
+      line-height: 1.6;
+    }
 
-  .topnav {
-    background-color: #86945e;
-    overflow: hidden;
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  .topnav a {
-    display: inline-block;
-    color: pink;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-    font-size: 1.0em;
-    font-weight: bold;
-  }
-
-  .topnav a:hover {
-    background-color: #c3d4a5;
-    color: white;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-  }
-
-  .topnav a.active {
-    background-color: #78866b;
-    color: #ffffff;
-    border-radius: 5px;
-  }
-
- /* Header */
+    /* Header */
     .header {
       position: relative;
       background-image: url('family1.jpg');
@@ -81,11 +52,9 @@
       animation: fadeIn 2s ease-in-out;
     }
 
-
     .header p {
       font-size: 1.2rem;
     }
-
    @keyframes fadeIn {
       from {
         opacity: 0;
@@ -95,8 +64,42 @@
         opacity: 1;
         transform: translateY(0);
       }
-}
+    }
 
+    .header h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+   .topnav {
+    background-color: #86945e;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .topnav a {
+    display: inline-block;
+    color: pink;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 1.0em;
+    font-weight: bold;
+  }
+
+  .topnav a:hover {
+    background-color:  #c3d4a5;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .topnav a.active {
+    background-color: #78866b;
+    color: #fofffo;
+    border-radius: 5px;
+}
   /* Cards */
   .card {
     background-color: white;

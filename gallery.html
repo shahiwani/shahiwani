@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>GALLERY</title>
+  <link rel="icon" type="image/x-icon" href="logo.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="footer.css">
+       <style>
+      * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+  body {
+      font-family: times new roman;
+      background: linear-gradient(to right, #feb47b,pink);
+      color: #333;
+      line-height: 1.6;
+    }
+
+  .topnav {
+      position: sticky;
+      top: 0;
+      background-color: #86945e;
+      display: flex;
+      justify-content: center;
+      padding: 3px 0;
+      z-index: 1000;
+
+    }
+
+    .topnav a {
+
+      color: pink;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 1.2em;
+      transition: all 0.3s;
+
+    }
+
+    .topnav a:hover {
+      background-color: #78866b;
+      color: #fofffo;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    
+    }
+
+  /* Header */
+    .header {
+      position: relative;
+      background-image: url('cat.gif');
+      background-size: cover;
+      background-position: center;
+      color:white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+ .topnav a {
+      display: inline-block;
+      color: pink;
+      text-align: center;
+      padding: 14px 20px; 
+      text-decoration: none;
+      font-size: 1.0em;
+      font-weight: bold; 
+    }
+
+    .topnav a:hover {
+      background-color: #c3d4a5; 
+      color: white; 
+      border-radius: 5px; 
+      transition: all 0.3s ease; 
+    }
+
+    .topnav a.active {
+      background-color: #78866b; 
+      color: #fofffo;
+      border-radius: 5px;
+}
+.header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+}
+ .header h1, .header p {
+      position: relative;
+      z-index: 1;
+    }
+
+    .header h1 {
+      font-size: 5em;
+      margin-bottom: 10px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+    }
+   @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+}
+}
+
+.gallery-container, .video-container {
+            padding: 1rem;
+            margin: 2rem auto;
+            max-width: 200px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+ video {
+    width: 300px; /* Adjust the width */
+    height: 300px; /* Keep the aspect ratio */
+    margin: 1rem;
+    border-radius: 10px;
+	float: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+
+   /* Lightbox styles */
+       .lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 10px;
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+
+        .lightbox .close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            color: white;
+            font-size: 2rem;
+            text-decoration: none;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+
+        .lightbox .close:hover {
+            background: red;
+        }
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+
+<body>
+
+    <div class="header">
+       <h2>Hello!</h2>
+   <h1>I'm <sub style="color:pink;">Wani</sub></h1>
+    <p>Welcome to my gallery!!</p>
+     </div>
+
+   <div class="topnav">
+    <a href="index.html">HOMEPAGE</a>
+    <a href="biodata.html">BIODATA</a>
+    <a href="education.html">EDUCATION</a>
+    <a href="experience.html">EXPERIENCE</a>
+    <a href="gallery.html"class="active">GALLERY</a>
+    <a href="family.html">FAMILY</a>
+  </div>
+
+        <h1>Photo</h1>
+
+        <main class="gallery-container">
+ <a href="#img1" class="gallery-item">
+            <img src="me.jpg" alt="Myself">
+        </a>       
+ <a href="#img2" class="gallery-item">
+            <img src="diploma friends.jpg" alt="Me with my diploma friends">
+	</a>
+
+<a href="#img3" class="gallery-item">
+            <img src="supervisor internship.jpg" alt="My supervisor and I during my internship">
+        </a>
+        
+<a href="#img4" class="gallery-item">
+            <img src="friends 1.jpg" alt="friends">
+        </a>
+
+ <a href="#img5" class="gallery-item">
+            <img src="celebration.jpg" alt="Indenpendance day celebration">
+        </a>
+        
+<a href="#img6" class="gallery-item">
+            <img src="family.jpg" alt="My family">
+        </a>
+<a href="#img7" class="gallery-item">
+            <img src=" childhood friends.jpg" alt="My childhood friends">
+        </a>
+    </main>
+
+   
+    <div id="img1" class="lightbox">
+        <a href="#" class="close">&times;</a>
+        <img src="me.jpg" alt="Myself">
+    </div>
+    <div id="img2" class="lightbox">
+        <a href="#" class="close">&times;</a>
+        <img src="diploma friends.jpg" alt="Me with my diploma friends">
+    </div>
+    <div id="img3" class="lightbox">
+        <a href="#" class="close">&times;</a>
+        <img src="supervisor internship.jpg" alt=" My supervisor and I during my internship">
+    </div>
+    <div id="img4" class="lightbox">
+        <a href="#" class="close">&times;</a>
+        <img src="friends 1.jpg" alt="friends">
+    </div>
+    <div id="img5" class="lightbox">
+        <a href="#" class="close">&times;</a>
+        <img src="celebration.jpg" alt="Indenpendance day celebration">
+    </div>
+    <div id="img6" class="lightbox">
+        <a href="#" class="close">&times;</a>
+        <img src="family.jpg" alt="My family">
+   </div>
+
+<div id="img7" class="lightbox">
+        <a href="#" class="close">&times;</a>
+        <img src=" childhood friends.jpg" alt="me with my childhood friends">
+    </div>
+
+</div>
+
+<hr size= "9" width="100%" color="white" align="center">
+
+
+ <div class="Video">
+        <h2>Here's some videos of me and my friends</h2>
+       <video width="400" controls>
+  	<source src="me.mp4" type="video/mp4">
+  	<source src="me.ogg" type="video/ogg">
+  	Your browser does not support HTML video.
+	</video>
+        <video width="400" controls>
+  	<source src="friends 1.mp4" type="video/mp4">
+  	<source src="friends 1.ogg" type="video/ogg">
+  	Your browser does not support HTML video.
+	</video>
+ 	<video width="400" controls>
+  	<source src="friends 2.mp4" type="video/mp4">
+  	<source src="friends 2.ogg" type="video/ogg">
+  	Your browser does not support HTML video.
+	</video>
+
+        <video width="400" controls>
+  	<source src=" slay gurls.mp4" type="video/mp4">
+  	<source src="slay gurls.ogg" type="video/ogg">
+  	Your browser does not support HTML video.
+	</video>
+
+
+<div class="footer">
+  <div class="footer-left">
+    <p>Contact Me:</p>
+    <a href="mailto:nshahiwani@gmail.com">📧 Email</a> |
+    <a href="http://www.wasap.my/601128851107" target="_blank">📱 WhatsApp</a> |
+    <a href="tel:601128851107">☎️ Call</a>
+  </div>
+  <div class="footer-center">
+    <p>© 2024 My Dear Diary. All rights reserved.</p>
+  </div>
+  <div class="footer-right">
+    <p>Follow Me:</p>
+    <a href="https://www.facebook.com/your-profile" target="_blank">
+      <img src="facebook-icon.jpg" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/your-profile" target="_blank">
+      <img src="instagram-icon.jpg" alt="Instagram">
+    </a>
+    <a href="https://twitter.com/your-profile" target="_blank">
+      <img src="tiktok-icon.jpg" alt="Twitter">
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
